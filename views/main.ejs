@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADEO_IULIANI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>Tadeo Iuliani</div>
+            <div> 
+                <a href="">Sobre mi</a>
+                <a href="">Proyectos</a>
+                <a href="">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="presentacion">
+            <div class="cards-presentacion">
+                <div id="container-imagen-perfil">
+                    <img src="/images/perfil.jpeg" alt="">
+                </div>
+                <div id="container-perfil">
+                    <h1>Tadeo Agustin Iuliani</h1>
+                    <h2>Programador Web</h2>
+                    <ul>
+                        <li><a href=""><img src="./images/icons8-gmail-nuevo-48.png" alt="Gmail"></a></li>
+                        <li><a href=""><img src="./images/icons8-linkedin-48.png" alt="Linkedin"></a></li>
+                        <li><a href=""><img src="./images/icons8-github-50.png" alt=""></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="Sobre-mi">
+            <div>
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in consectetur eum quasi quo eligendi, cum vel quam dolore saepe enim facere omnis odit asperiores soluta earum architecto delectus amet.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <!-- <div>
+                <img src="../public/images/html-5.png" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div>
+                <img src="../public/images/css-3.png" alt="css">
+                <h3>CSS</h3>
+            </div>
+            <div>
+                <img src="../public/images/js.png" alt="jv">
+                <h3>JV</h3>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>C#</h3>
+            </div>
+            <div>
+                <img src="../public/images/nodejs.png" alt="node">
+                <h3>Nodejs</h3>
+            </div> -->
+            <div class="container">
+                <ul>
+                    <% items.forEach(item => { %>
+                      <li class="card">
+                        <img src="<%= item.img %>" alt="<%= item.descripcion %>">
+                        <h2><%= item.descripcion %></h2>
+                      </li>
+                    <% }) %>
+                </ul>
+              </div>
+        </section>
+
+        <section id="proyectos">
+            <div></div>
+        </section>
+        <section id="Contacto">
+            <h2>Contactate!</h2>
+            <form action="/sendCorreo" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Enviar</button>
+              
+            </form>
+        </section>
+    </main>
+
+    <footer>FIN</footer>
+</body>
+</html>

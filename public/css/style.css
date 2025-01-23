@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #333; */
+    color : #333;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    color: #333;
+    align-content: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+main{
+    box-sizing: border-box;
+}
+#presentacion{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    /* justify-items: center; */
+    /* margin: 10px; */
+    box-sizing: border-box;
+    /* margin-left: 0%;
+    margin-right: 20%; */
+
+}
+
+.cards-presentacion{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-imagen-perfil{
+    padding-top: 60px;
+}
+#container-imagen-perfil img{
+    width: 100%;
+    height: 80%;
+} 
+#container-perfil{
+    align-content: center;
+}
+
+#container-perfil ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+
+
+#Sobre-mi{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 150px;
+}
+
+#Sobre-mi div{
+    width: 60%;
+    text-align: center;
+}
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+#skills h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#skills .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#skills ul{
+    list-style: none;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.card h2{
+    margin: 0;
+}
