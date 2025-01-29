@@ -1,6 +1,4 @@
 
-
-
 // importar express para manejar las solicitudes y respuestas del servidor
 const express = require ("express")
 /* importar el modulo Nativo path, para trabajar con rutas de archivos y directorios de manera compatible
