@@ -193,3 +193,9 @@ footer h2{
     margin: 0;
     padding: 0;
 }
+
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
