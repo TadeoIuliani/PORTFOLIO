@@ -27,9 +27,9 @@
                     <h1>Tadeo Agustin Iuliani</h1>
                     <h2>Programador Web</h2>
                     <ul>
-                        <li><a href=""><img src="./images/icons8-gmail-nuevo-48.png" alt="Gmail"></a></li>
-                        <li><a href=""><img src="./images/icons8-linkedin-48.png" alt="Linkedin"></a></li>
-                        <li><a href=""><img src="./images/icons8-github-50.png" alt=""></a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&to=tadeiuliani@gmail.com" target="_blank"><img src="./images/icons8-gmail-nuevo-48.png" alt="Gmail"></a></li>
+                        <li><a href="https://www.linkedin.com/in/tadeo-agustin-iuliani/" target="_blank"><img src="./images/icons8-linkedin-48.png" alt="Linkedin"></a></li>
+                        <li><a href="https://github.com/TadeoIuliani" target="_blank"><img src="./images/icons8-github-50.png" alt=""></a></li>
                     </ul>
                     
                 </div>
@@ -39,12 +39,18 @@
         <section id="Sobre-mi">
             <div>
                 <h2>Sobre mi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in consectetur eum quasi quo eligendi, cum vel quam dolore saepe enim facere omnis odit asperiores soluta earum architecto delectus amet.</p>
+                <p>¡Hola! Soy Tadeo, un programador full stack con experiencia en el desarrollo de aplicaciones web. Me especializo en backend con Node.js, Express y MySQL, utilizando Sequelize como ORM para gestionar bases de datos de manera eficiente. Además, tengo conocimientos en frontend con HTML, CSS y JavaScript, lo que me permite desarrollar aplicaciones completas.
+                    Busco constantemente desafíos y retos que me ayuden a seguir mejorando como desarrollador. Me considero una persona proactiva, con iniciativa y siempre dispuesta a aprender, enfrentando cada proyecto como una oportunidad para crecer y perfeccionar mis habilidades.
+                </p>
+
+            </div>
+
+                </p>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 id="title-skills">Skills</h2>
             <div class="container">
                 <ul>
                     <% items.forEach(item => { %>
@@ -61,18 +67,17 @@
             <div></div>
         </section>
         <section id="Contacto">
-            <h2>Contactate!</h2>
+            <!-- <h2>Contactate!</h2> -->
             <img src="../images/imagen-contacto.png" alt="img-Contacto">
             <form action="/sendCorreo" method="POST">
                 <h3>¡Trabajemos juntos!</h3>
 
                 <div class="primer-fila">
                     <div class="form-name">
-                        <!-- <label for="name">Nombre:</label> -->
                         <input type="text" id="name" name="name"  placeholder="Nombre" required>
                     </div>
                     <div class="form-email">
-                        <input type="email" id="email" name="email" placeholder="Coreo electronico" required>
+                        <input type="email" id="email" name="email" placeholder="Correo electronico" required>
                     </div>
                 </div>
 
