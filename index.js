@@ -28,11 +28,6 @@ const mainRouter = require ("./routes/mainRouter.js") // Rutas Principales como 
 const sendCorreoRouter = require("./routes/sendCorreoRouter.js")
 
 
-
-
-// configuracion del motor de vistas (plantillas dinamicas) y la carpeta donde estaràn los archivos de vista
-
-
 // Definimos las rutas para diferentes funcionalidades de la aplicacion
 
 app.use ("/",mainRouter); // rutas principales asociados a la raiz
@@ -42,6 +37,6 @@ app.use("/sendCorreo", sendCorreoRouter)
 /* iniciamos el servidor en el puerto que definimos (port) y mostramos un mensaje de confirmacion en la consola */
 
 app.listen (port , ()=>{
-console.log(`Servidor de concesionarias OK, en el puerto ${port}`);
+console.log(`Servidor OK, en el puerto ${port}`);
 
 });

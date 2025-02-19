@@ -24,11 +24,11 @@
       "descripcion": "MYSQL"
   },
   {
-      "img": "/images/pyhton.png",
+      "img": "/images/python.png",
       "descripcion": "Pyhton"
   },
   {
-      "img": "/images/C#.png",
+      "img": "/images/Csharp.png",
       "descripcion": "C#"
   }
   ,

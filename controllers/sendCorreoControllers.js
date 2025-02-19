@@ -39,9 +39,9 @@ module.exports = {
       
         transporter.sendMail(mailOptions, (error, info) => {
           if (error) {
-            return res.status(500).send('Error al enviar el correo');
+            return res.status(500).json('Error al enviar el correo');
           }
-          res.status(200).send('Correo enviado correctamente');
+          res.status(200).json('Correo enviado correctamente');
         });
       }
 }

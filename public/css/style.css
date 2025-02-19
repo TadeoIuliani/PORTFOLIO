@@ -7,7 +7,11 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
 }
-
+body, form {
+    margin: 0;
+    padding: 0;
+  }
+  
 header{
     width: 100%;
     height: 60px;
@@ -135,10 +139,10 @@ main{
 #Contacto{
     display: flex;
     flex-wrap: wrap;
-    /* text-align: center; */
     align-content: center;
     justify-content: center;
     margin-top: 150px;
+    gap: 10px;
 }
 
 #Contacto h2{
@@ -146,48 +150,83 @@ main{
     text-align: center;
 }
 
+#Contacto img{
+    width: 30%;
+    height: 50%;
+}
 form{
+    width: 30%;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+    gap: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* form input{
-    text-align: center;
+form h3{
+    padding: 10px;
 }
- */
+
+.primer-fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
 .form-name{
     display: flex;
     flex-direction: column;
-    margin: 15px;
-    width: 60%;
+    width: 40%;
 }
 
 .form-email{
     display: flex;
     flex-direction: column;
-    margin: 15px;
-    width: 60%;
+    width: 40%;
 }
 
 .form-message{
     display: flex;
     flex-direction: column;
-    margin: 15px;
-    width: 60%;
+    /* margin: 15px */;
+    width: 100%;
+    /* padding: 10px; */
 }
 
 form button{
-    width: 20%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #001f3f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+
+form input,textarea{
+    padding: 10px;
+    border: 2px solid #2417ba; /* Bordes de color verde */
+    border-radius: 8px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde azul al hacer clic */
+    background-color: #333;
+    color: #fdfeff;
+    font-size: 16px;
+    resize: none;
+}
+
 
 footer{
     width: 100%;
     text-align: center;
     background-color: #000000;
     color: #fdfeff;
-    padding: 15px 0px 15px 0px
+    padding: 20px 0px 20px 0px;
 }
 footer h2{
     margin: 0;

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetElement) {
                 // Desplazar suavemente a la sección
-                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
             }
         });
     });
