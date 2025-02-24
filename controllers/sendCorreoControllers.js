@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail', // O el servicio de correo que elijas
   auth: {
-    user: 'tadeiuliani@gmail.com',
-    pass: 'kfsf avii rklh gycm', // Puedes usar contraseñas de aplicaciones si usas Gmail con verificación en dos pasos
+    user: process.env.CORREO,
+    pass: process.env.CORREO_PASS, // Puedes usar contraseñas de aplicaciones si usas Gmail con verificación en dos pasos
   },
 });
   
@@ -14,7 +14,7 @@ module.exports = {
       
         const mailOptions = {
           from: 'tu-correo@gmail.com',
-          to: 'tadeiuliani@gmail.com', // Correo donde recibes los mensajes
+          to: process.env.CORREO, // Correo donde recibes los mensajes
           subject: 'Nuevo mensaje desde el formulario',
           text: `Nombre: ${name}Correo: ${email}Mensaje: ${message}`,
         };

@@ -5,7 +5,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #333; */
     color : #333;
     justify-content: space-between;
     box-sizing: border-box;
@@ -242,7 +241,6 @@ form input,textarea{
     outline: none; /* Quitar el borde azul al hacer clic */
     background-color: #333;
     color: #fdfeff;
-    /* font-size: 0.8rem; */
     resize: none;
     font-family: 'Montserrat', sans-serif;
 }
